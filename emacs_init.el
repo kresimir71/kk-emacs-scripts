@@ -1,3 +1,23 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;An initialisation file for emacs editor
+;
+;This is an initialisation file for
+;the emacs editor
+;
+;It features the following keys:
+;f2,f3: browse 8 top files in buffer list
+;f4: show buffer list
+;f5: another window
+;f6: copy word
+;f7: copy line
+;f8: show directory of the current file
+;f9: copy line, assume it is a path and open it as a file
+;
+;It also opens some files and directories.
+;
+;Some shells are opened.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (find-file "~/")
 (find-file "/home/")
 (find-file "/etc/cron.d/")
