@@ -12,6 +12,7 @@
 ;f7: copy line
 ;f8: show directory of the current file
 ;f9: copy line, assume it is a path and open it as a file
+;f10: revert-buffer without confirmation
 ;
 ;It also opens some files and directories.
 ;
@@ -111,6 +112,22 @@
   (read-kbd-macro "<f7> C-x C-f C-a C-y C-k RET"))
 
 (global-set-key [f9] 'kk-open-file01)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; revert-buffer without confirmation
+; The user does get the warning if somebody is 'locking', thus editing file.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defun kk-revert-buffer-force ()
+  (interactive)
+  (progn
+    ; first argument is dummy, second is 'noconfirmation'
+    ; The user does get the warning if somebody is 'locking', thus editing file.
+    (revert-buffer 1 1)
+    )
+  )
+
+(global-set-key [f10] 'kk-revert-buffer-force)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; open some shells
