@@ -19,14 +19,15 @@
 ;Some shells are opened.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(find-file "~/")
-(find-file "/home/")
-(find-file "/etc/cron.d/")
-(find-file "/etc/apache2/")
-(find-file "/etc/haproxy/")
-(find-file "/var/log/apache2/")
-(find-file "/etc/sudoers.d/")
-
+(ignore-errors
+  (find-file "~/")
+  (find-file "/home/")
+  (find-file "/etc/cron.d/")
+  (find-file "/etc/apache2/")
+  (find-file "/etc/haproxy/")
+  (find-file "/var/log/apache2/")
+  (find-file "/etc/sudoers.d/")
+  )
 ;;;;;;;;;;;;;;;;;;;;;;
 ;browse buffers 
 ;;;;;;;;;;;;;;;;;;;;;
