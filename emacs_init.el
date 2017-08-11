@@ -19,7 +19,11 @@
 ;Some shells are opened.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;;;;;;;;;;;;;;;;;;;;;
+; Disable making backup files: dangerous when editing in www dir
+;;;;;;;;;;;;;;;;;;;;;
 
+(setq make-backup-files nil)
 
 ;;;;;;;;;;;;;;;;;;;;;;
 ;browse buffers 
